@@ -2,7 +2,7 @@
 const color = useColorMode()
 
 function toggleDark() {
-  color.preference = color.value === 'dark' ? 'light' : 'dark'
+  color.value = color.value === 'dark' ? 'light' : 'dark'
 }
 const themeColor = computed(() => {
   return color.value

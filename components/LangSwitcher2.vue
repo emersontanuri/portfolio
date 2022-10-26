@@ -10,13 +10,13 @@ onMounted(() => {
 })
 
 function changeLang() {
-  if (locale.value === 'tr') {
+  if (locale.value === 'ptbr') {
     cookieLocale.setLocale('en')
     locale.value = 'en'
   }
   else {
-    cookieLocale.setLocale('tr')
-    locale.value = 'tr'
+    cookieLocale.setLocale('ptbr')
+    locale.value = 'ptbr'
   }
 }
 </script>

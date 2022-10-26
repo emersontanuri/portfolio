@@ -1,6 +1,24 @@
 {
     "hello": "Hello",
     "goodbye": "Good Bye",
+    "work":"What I do?",
+    "role": ["Business Administrator", "Data Analyst"],
+    "notFound": {
+        "title": "Nothing Found",
+        "text": "The page you are looking for does not exists or something went wrong"
+    },
+    "resumeTitles": {
+        "Education": "Education",
+        "Experience": "Experience",
+        "Skills": "My Skills"
+    },
+    "formInfos": {
+        "title": "Contact Form",
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message",
+        "sendForm": "Send Message"
+    },
     "pageTitles": {
         "about": "About",
         "resume": "Resume",

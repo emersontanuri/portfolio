@@ -43,18 +43,15 @@ const { data: services } = await useFetch('/api/services')
     </header>
 
     <section class="about-text">
+      <p>PT-BR</p>
       <p>
-        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-        I enjoy
-        turning complex problems into simple, beautiful and intuitive designs.
+        Sou um Administrador por formação, atualmente Gerente de Marketing no app de delivery pede.ai.
+        Sou apaixonado por tecnologia, curioso por temas diversos e sempre estudando uma nova habilidade.
       </p>
-
+      <p>EN</p>
       <p>
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        Moreover, I
-        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-        across your
-        message and identity in the most creative way. I created web design for many famous brand companies.
+        I am a Graduated Business Administrator, currently Marketing Manager at the delivery app pede.ai.
+        I am passionate about technology, curious about diverse topics and always studying a new ability.
       </p>
     </section>
 
@@ -62,7 +59,7 @@ const { data: services } = await useFetch('/api/services')
 
     <section class="service">
       <h3 class="h3 service-title">
-        What i'm doing?
+        {{ $t('work') }}
       </h3>
 
       <ul class="service-list">
@@ -72,9 +69,9 @@ const { data: services } = await useFetch('/api/services')
 
     <!-- testimonials -->
 
-    <section class="testimonials">
+    <!-- <section class="testimonials">
       <h3 class="h3 testimonials-title">
-        Testimonials
+        Recomendações
       </h3>
 
       <ul class="testimonials-list has-scrollbar">
@@ -89,16 +86,16 @@ const { data: services } = await useFetch('/api/services')
             </h4>
 
             <div class="testimonials-text">
-              <p>{{ locale === 'en' ? testimonial.content?.en : testimonial.content?.tr }}</p>
+              <p>{{ locale === 'en' ? testimonial.content?.en : testimonial.content?.ptbr }}</p>
             </div>
           </div>
         </li>
       </ul>
-    </section>
+    </section> -->
 
     <!-- testimonials modal -->
 
-    <div class="modal-container" :class="{ active: activeModal }">
+    <!-- <div class="modal-container" :class="{ active: activeModal }">
       <div v-show="activeModal" class="overlay" :class="{ active: activeOverlay }" />
 
       <section class="testimonials-modal">
@@ -121,17 +118,17 @@ const { data: services } = await useFetch('/api/services')
 
         <div class="flex gap-5 items-start">
           <img class="my-auto hidden md:block" src="/images/icon-quote.svg" alt="quote icon">
-          <p class="text-justify text-gray-400 text-sm md:text-md" v-html="locale === 'en' ? testimonialItem.content?.en : testimonialItem.content?.tr" />
+          <p class="text-justify text-gray-400 text-sm md:text-md" v-html="locale === 'en' ? testimonialItem.content?.en : testimonialItem.content?.ptbr" />
         </div>
         <div class="mt-2 flex justify-end text-sm text-gray-600 italic">
           Company Co.
         </div>
       </section>
-    </div>
+    </div> -->
 
     <!-- clients -->
 
-    <section class="clients">
+    <!-- <section class="clients">
       <h3 class="h3 clients-title">
         Clients
       </h3>
@@ -173,6 +170,6 @@ const { data: services } = await useFetch('/api/services')
           </a>
         </li>
       </ul>
-    </section>
+    </section> -->
   </article>
 </template>

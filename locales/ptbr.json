@@ -1,0 +1,29 @@
+{
+    "hello": "Olá",
+    "goodbye": "Até mais",
+    "work":"O que eu faço?",
+    "role": ["Administrador", "Analista de Dados"],
+    "notFound": {
+        "title": "Nada Encontrado",
+        "text": "A página que você está procurando não existe ou algum erro aconteceu"
+    },
+    "resumeTitles": {
+        "education": "Educação",
+        "experience": "Experiência",
+        "skills": "Minhas habilidades"
+    },
+    "formInfos": {
+        "title": "Formulário de Contato",
+        "name": "Seu nome",
+        "email": "Seu email",
+        "message": "Sua mensagem",
+        "sendForm": "Enviar mensagem"
+    },
+    "pageTitles": {
+        "about": "Sobre mim",
+        "resume": "Currículo",
+        "portfolio": "Portfólio",
+        "blog": "Blog",
+        "contact": "Contato"
+    }
+}

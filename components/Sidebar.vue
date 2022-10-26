@@ -10,22 +10,22 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="/images/my-avatar.png" alt="Azad Furkan ŞAKAR" width="80">
+        <img src="/images/my-avatar.jpg" alt="Emerson Tanuri" width="80" class="rounded-lg">
       </figure>
 
       <div class="info-content">
-        <h1 class="name" title="Azad Furkan ŞAKAR">
-          Azad Furkan ŞAKAR
+        <h1 class="name" title="Emerson Tanuri">
+          Emerson Tanuri
         </h1>
 
         <p class="title text-center xl:block flex items-center justify-center gap-1">
-          <span class="xl:after:content-[''] after:content-[',']">Civil Engineer</span>
-          <span>Web developer</span>
+          <span class="xl:after:content-[''] after:content-[',']">{{ $t('role[0]') }}</span>
+          <span>{{ $t('role[1]') }}</span>
         </p>
       </div>
 
       <button class="info_more-btn" @click="isOpen = !isOpen">
-        <span>Show Contacts</span>
+        <span>Mostrar Contatos</span>
 
         <ion-icon name="chevron-down" />
       </button>
@@ -45,7 +45,7 @@ function toggleMenu() {
               Email
             </p>
 
-            <a href="mailto:info@afsakar.com" class="contact-link">info@afsakar.com</a>
+            <a href="mailto:emersontanuri1@gmail.com" class="contact-link">emersontanuri1@gmail.com</a>
           </div>
         </li>
 
@@ -59,7 +59,7 @@ function toggleMenu() {
               Github
             </p>
 
-            <a href="https://github.com/afsakar" class="contact-link" target="_blank">afsakar</a>
+            <a href="https://github.com/emersontanuri" class="contact-link" target="_blank">emersontanuri</a>
           </div>
         </li>
 
@@ -73,7 +73,7 @@ function toggleMenu() {
               Linkedin
             </p>
 
-            <a href="https://tr.linkedin.com/in/afsakar" class="contact-link" target="_blank">Azad Furkan ŞAKAR</a>
+            <a href="https://tr.linkedin.com/in/emerson-tanuri" class="contact-link" target="_blank">Emerson Tanuri</a>
           </div>
         </li>
 
@@ -84,10 +84,10 @@ function toggleMenu() {
 
           <div class="contact-info">
             <p class="contact-title">
-              Location
+              Localização
             </p>
 
-            <address>Diyarbakır, Turkey</address>
+            <address>Petrolina-PE, Brasil</address>
           </div>
         </li>
       </ul>
@@ -96,17 +96,12 @@ function toggleMenu() {
 
       <ul class="social-list">
         <li class="social-item">
-          <NuxtLink to="https://www.twitter.com/afsakar" class="social-link" target="_blank">
-            <ion-icon name="logo-twitter" />
-          </NuxtLink>
-        </li>
-
-        <li class="social-item">
-          <NuxtLink to="https://www.instagram.com/afsakar" class="social-link" target="_blank">
+          <NuxtLink to="https://www.instagram.com/emersontanuri" class="social-link" target="_blank">
             <ion-icon name="logo-instagram" />
           </NuxtLink>
         </li>
         <LangSwitcher2 />
+        <!-- <DarkToggle /> -->
       </ul>
     </div>
   </aside>

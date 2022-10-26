@@ -1,7 +1,12 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 useHead({
   title: 'Resume',
 })
+const { locale } = useI18n({ useScope: 'global' })
+const { data: education } = await useFetch('/api/education')
+const { data: jobs } = await useFetch('/api/jobs')
+const { data: skills } = await useFetch('/api/skills')
 </script>
 
 <template>
@@ -19,51 +24,21 @@ useHead({
         </div>
 
         <h3 class="h3">
-          Education
+          {{ $t('resumeTitles.education') }}
         </h3>
       </div>
 
       <ol class="timeline-list">
-        <li class="timeline-item">
+        <li v-for="ed in education" :key="ed.id" class="timeline-item">
+          <span>{{ locale === 'en' ? ed.type.en : ed.type.ptbr }}</span>
           <h4 class="h4 timeline-item-title">
-            University school of the arts
+            {{ locale === 'en' ? ed.title.en : ed.title.ptbr }}
           </h4>
 
-          <span>2007 — 2008</span>
+          <span>{{ ed.startYear }} — {{ ed.endYear }}</span>
 
           <p class="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-            quas molestias
-            exceptur.
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            New york academy of art
-          </h4>
-
-          <span>2006 — 2007</span>
-
-          <p class="timeline-text">
-            Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda
-            est
-            omnis..
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            High school of art and design
-          </h4>
-
-          <span>2002 — 2004</span>
-
-          <p class="timeline-text">
-            Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed
-            consequuntur
-            magni dolores
-            eos.
+            {{ locale === 'en' ? ed.content.en : ed.content.ptbr }}
           </p>
         </li>
       </ol>
@@ -72,55 +47,25 @@ useHead({
     <section class="timeline">
       <div class="title-wrapper">
         <div class="icon-box">
-          <ion-icon name="book-outline" />
+          <ion-icon name="briefcase-outline" />
         </div>
 
         <h3 class="h3">
-          Experience
+          {{ $t('resumeTitles.experience') }}
         </h3>
       </div>
 
       <ol class="timeline-list">
-        <li class="timeline-item">
+        <li v-for="job in jobs" :key="job.id" class="timeline-item">
+          <span>{{ locale === 'en' ? job.type.en : job.type.ptbr }}</span>
           <h4 class="h4 timeline-item-title">
-            Creative director
+            {{ locale === 'en' ? job.title.en : job.title.ptbr }}
           </h4>
 
-          <span>2015 — Present</span>
+          <span>{{ job.startYear }} — {{ job.endYear }}</span>
 
           <p class="timeline-text">
-            Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-            qvuas
-            molestias
-            exceptur.
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Art director
-          </h4>
-
-          <span>2013 — 2015</span>
-
-          <p class="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-            quas molestias
-            exceptur.
-          </p>
-        </li>
-
-        <li class="timeline-item">
-          <h4 class="h4 timeline-item-title">
-            Web designer
-          </h4>
-
-          <span>2010 — 2013</span>
-
-          <p class="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-            quas molestias
-            exceptur.
+            {{ locale === 'en' ? job.content.en : job.content.ptbr }}
           </p>
         </li>
       </ol>
@@ -128,59 +73,20 @@ useHead({
 
     <section class="skill">
       <h3 class="h3 skills-title">
-        My skills
+        {{ $t('resumeTitles.skills') }}
       </h3>
 
       <ul class="skills-list content-card">
-        <li class="skills-item">
+        <li v-for="skill in skills" :key="skill.id" class="skills-item">
           <div class="title-wrapper">
             <h5 class="h5">
-              Web design
+              {{ locale === 'en' ? skill.title.en : skill.title.ptbr }}
             </h5>
-            <data value="80">80%</data>
+            <data :value="skill.percentage">{{ skill.percentage }}%</data>
           </div>
 
           <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 80%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              Graphic design
-            </h5>
-            <data value="70">70%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 70%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              Branding
-            </h5>
-            <data value="90">90%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 90%;" />
-          </div>
-        </li>
-
-        <li class="skills-item">
-          <div class="title-wrapper">
-            <h5 class="h5">
-              WordPress
-            </h5>
-            <data value="50">50%</data>
-          </div>
-
-          <div class="skill-progress-bg">
-            <div class="skill-progress-fill" style="width: 50%;" />
+            <div class="skill-progress-fill" :style="`width: ${skill.percentage}%;`" />
           </div>
         </li>
       </ul>

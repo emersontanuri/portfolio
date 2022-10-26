@@ -7,11 +7,11 @@ useHead({
     lang: locale,
   },
   titleTemplate: (pageTitle) => {
-    return pageTitle ? `${pageTitle} - Azad Furkan ŞAKAR` : 'Azad Furkan ŞAKAR'
+    return pageTitle ? `${pageTitle} - Dados por Tanuri` : 'Dados por Tanuri'
   },
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '/nuxt.png',
+      rel: 'icon', type: 'image/png', href: '/images/logo-icon.png',
     },
     {
       rel: 'preconnect',

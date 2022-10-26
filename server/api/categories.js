@@ -5,22 +5,29 @@ export default defineEventHandler(() => {
     {
       id: 1,
       title: {
-        en: 'Web Development',
-        tr: 'Web Geliştirme',
+        en: 'Data Extraction and Treatment',
+        ptbr: 'Extração e Tratamento de Dados',
       },
     },
     {
       id: 2,
       title: {
-        en: 'Application',
-        tr: 'Uygulama',
+        en: 'Data Exploration',
+        ptbr: 'Exploração de Dados',
       },
     },
     {
       id: 3,
       title: {
-        en: 'Web Design',
-        tr: 'Web Tasarım',
+        en: 'Automations',
+        ptbr: 'Automações',
+      },
+    },
+    {
+      id: 4,
+      title: {
+        en: 'Dashboards',
+        ptbr: 'Painéis de Dados',
       },
     },
   ]

@@ -23,11 +23,11 @@
         </NuxtLink>
       </li>
 
-      <li class="navbar-item">
+      <!-- <li class="navbar-item">
         <NuxtLink to="/blog" class="navbar-link">
           {{ $t('pageTitles.blog') }}
         </NuxtLink>
-      </li>
+      </li> -->
 
       <li class="navbar-item">
         <NuxtLink to="/contact" class="navbar-link">
@@ -43,6 +43,6 @@ a.router-link-active {
   font-weight: bold;
 }
 a.router-link-exact-active {
-  color: var(--vegas-gold);
+  color: var(--teal);
 }
 </style>
