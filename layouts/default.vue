@@ -36,6 +36,7 @@ useHead({
     {
       property: 'og:image',
       content: '/images/share.png',
+      href: '/images/share.png',
     },
   ],
   script: [
