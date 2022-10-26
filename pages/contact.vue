@@ -28,7 +28,7 @@ useHead({
 
         <textarea name="message" class="form-input" :placeholder="$t('formInfos.message')" required data-form-input />
 
-        <button class="form-btn" type="submit" disabled data-form-btn>
+        <button class="form-btn" type="submit" data-form-btn>
           <ion-icon name="paper-plane" />
           <span>{{ $t('formInfos.sendForm') }}</span>
         </button>
