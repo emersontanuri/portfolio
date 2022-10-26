@@ -35,8 +35,19 @@ useHead({
   meta: [
     {
       property: 'og:image',
-      content: '/images/share.png',
-      href: '/images/share.png',
+      content: '/images/share.jpg',
+    },
+    {
+      property: 'og:title',
+      content: 'Dados por Tanuri',
+    },
+    {
+      property: 'og:description',
+      content: 'Análises de dados, trabalhos e muito mais.',
+    },
+    {
+      name: 'description',
+      content: 'Análises de dados, trabalhos e muito mais.',
     },
   ],
   script: [
