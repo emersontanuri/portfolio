@@ -16,9 +16,9 @@ useHead({
         {{ $t('formInfos.title') }}
       </h3>
 
-      <form action="#" class="form" data-form>
+      <form action="#" class="form" data-form netlify>
         <div class="input-wrapper">
-          <input type="text" name="fullname" class="form-input" :placeholder="$t('formInfos.name')" required data-form-input>
+          <input type="text" name="name" class="form-input" :placeholder="$t('formInfos.name')" required data-form-input>
 
           <input
             type="email" name="email" class="form-input" :placeholder="$t('formInfos.email')" required
