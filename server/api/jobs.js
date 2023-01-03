@@ -32,8 +32,8 @@ export default defineEventHandler(() => {
         ptbr: 'Estagiário de Expansão',
       },
       content: {
-        en: 'Intern Designer creator of promotion posters and social media creatives.',
-        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+        en: 'Creation of a conversion page for new subscribers, contact for scheduling meetings and initial monitoring of the launch of new operations.',
+        ptbr: 'Criação de página de conversão para novos inscritos, contato para agendamento de reuniões e acompanhamento inicial de lançamento de novas operações.',
       },
     },
     {
@@ -49,8 +49,8 @@ export default defineEventHandler(() => {
         ptbr: 'Consultor de Expansão',
       },
       content: {
-        en: 'Intern Designer creator of promotion posters and social media creatives.',
-        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+        en: 'Follow-up of processes to launch new operations throughout Brazil.',
+        ptbr: 'Acompanhamento de processos para lançamento de novas operações em todo o Brasil.',
       },
     },
     {
@@ -66,8 +66,8 @@ export default defineEventHandler(() => {
         ptbr: 'Coordenador de Expansão',
       },
       content: {
-        en: 'Intern Designer creator of promotion posters and social media creatives.',
-        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+        en: 'Coordination of the sales team and launch of new operations.',
+        ptbr: 'Coordenação da equipe de vendas e lançamento de novas operações.',
       },
     },
     {
@@ -83,8 +83,8 @@ export default defineEventHandler(() => {
         ptbr: 'Gerente de Operações',
       },
       content: {
-        en: 'Intern Designer creator of promotion posters and social media creatives.',
-        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+        en: 'Management of the team of network consultants with more than 100 licensees and management of the launch of new operations.',
+        ptbr: 'Gestão da equipe de consultores da rede com mais de 100 licenciados e gestão de lançamento de novas operações.',
       },
     },
     {
@@ -99,8 +99,8 @@ export default defineEventHandler(() => {
         ptbr: 'Gerente de Marketing',
       },
       content: {
-        en: 'Intern Designer creator of promotion posters and social media creatives.',
-        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+        en: 'Team management, planning strategies and monthly actions, management of marketing investments, creation of reports in spreadsheet, Metabase and Power BI to monitor results and creation of data and marketing automations.',
+        ptbr: 'Gestão de equipe, planejamento de estratégias e ações mensais, gestão de investimentos de marketing, criação de relatórios em planilha, no Metabase e no Power BI para acompanhamento dos resultados e criação de automações de dados e marketing.',
       },
     },
   ].reverse()

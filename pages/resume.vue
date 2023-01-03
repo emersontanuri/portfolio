@@ -30,14 +30,14 @@ const { data: skills } = await useFetch('/api/skills')
 
       <ol class="timeline-list">
         <li v-for="ed in education" :key="ed.id" class="timeline-item">
-          <span>{{ locale === 'en' ? ed.type.en : ed.type.ptbr }}</span>
+          <span>{{ locale === 'en' ? ed.name.en : ed.name.ptbr }}</span>
           <h4 class="h4 timeline-item-title">
-            {{ locale === 'en' ? ed.title.en : ed.title.ptbr }}
+            {{ ed.institution }}
           </h4>
 
-          <span>{{ ed.startYear }} — {{ ed.endYear }}</span>
+          <span>{{ ed.date }}</span>
 
-          <p class="timeline-text">
+          <p v-if="ed.content" class="timeline-text">
             {{ locale === 'en' ? ed.content.en : ed.content.ptbr }}
           </p>
         </li>

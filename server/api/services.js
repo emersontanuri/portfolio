@@ -11,14 +11,6 @@ export default defineEventHandler(() => {
       },
       icon: 'funnel',
       image: null,
-      certifications: [
-        {
-          institution: 'DataCamp',
-          title: 'SQL Fundamentals',
-          publish_date: '02/01/2023',
-          link: 'https://www.datacamp.com/statement-of-accomplishment/track/04740b43ba2b75c17089153bf53bdbbf7dc0ab6e',
-        },
-      ],
     },
     {
       id: 2,
