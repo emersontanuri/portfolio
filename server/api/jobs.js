@@ -5,20 +5,103 @@ export default defineEventHandler(() => {
     {
       id: 1,
       title: {
-        en: 'Federal University of São Francisco Valley',
-        ptbr: 'Universidade Federal do Vale do São Francisco',
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
       },
-      startYear: 2016,
-      endYear: 2022,
+      startYear: '05/2019',
+      endYear: '11/2019',
       type: {
-        en: 'Graduation',
-        ptbr: 'Graduação',
+        en: 'Marketing Intern',
+        ptbr: 'Estagiário de Marketing',
       },
       content: {
-        en: 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.',
-        ptbr: 'Richard kurumsal bir kimlik yaratmak için işe alındı. Yapılan işten çok memnun kaldık. Çok fazla tecrübesi var ve müşterinin ihtiyaçları konusunda çok endişeli. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut workels dolore magnarels alia.',
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
       },
     },
-
-  ]
+    {
+      id: 2,
+      title: {
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
+      },
+      startYear: '11/2019',
+      endYear: '06/2020',
+      type: {
+        en: 'Expansion Intern',
+        ptbr: 'Estagiário de Expansão',
+      },
+      content: {
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+      },
+    },
+    {
+      id: 3,
+      title: {
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
+      },
+      startYear: '06/2020',
+      endYear: '08/2020',
+      type: {
+        en: 'Expansion Consultant',
+        ptbr: 'Consultor de Expansão',
+      },
+      content: {
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+      },
+    },
+    {
+      id: 4,
+      title: {
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
+      },
+      startYear: '08/2020',
+      endYear: '02/2021',
+      type: {
+        en: 'Expansion Coordinator',
+        ptbr: 'Coordenador de Expansão',
+      },
+      content: {
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+      },
+    },
+    {
+      id: 5,
+      title: {
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
+      },
+      startYear: '02/2021',
+      endYear: '01/2022',
+      type: {
+        en: 'Operations Manager',
+        ptbr: 'Gerente de Operações',
+      },
+      content: {
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+      },
+    },
+    {
+      id: 6,
+      title: {
+        en: 'pede.ai Delivery App',
+        ptbr: 'App de Delivery pede.ai',
+      },
+      startYear: '01/2022',
+      type: {
+        en: 'Marketing Manager',
+        ptbr: 'Gerente de Marketing',
+      },
+      content: {
+        en: 'Intern Designer creator of promotion posters and social media creatives.',
+        ptbr: 'Designer estagiário criador de posters promocionais e artes para mídias sociais.',
+      },
+    },
+  ].reverse()
 })

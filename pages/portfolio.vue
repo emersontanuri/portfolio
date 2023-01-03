@@ -130,7 +130,7 @@ function closeItem() {
             </h4>
 
             <small class="flex items-center justify-start gap-2 text-gray-500">
-              <span>{{ activeItem.publish_date }}</span> | <span>{{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.ptbr }}</span> | <a :href="activeItem.link">Ver Projeto</a>
+              <span>{{ activeItem.publish_date }}</span> | <span>{{ locale === 'en' ? activeItem.category?.title?.en : activeItem.category?.title?.ptbr }}</span> | <a :href="activeItem.link" class="text-teal-500">Ver Projeto</a>
             </small>
 
             <p class="text-justify" v-html="locale === 'en' ? activeItem.content?.en : activeItem.content?.ptbr" />

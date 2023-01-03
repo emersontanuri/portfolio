@@ -8,9 +8,9 @@
         "text": "The page you are looking for does not exists or something went wrong"
     },
     "resumeTitles": {
-        "Education": "Education",
-        "Experience": "Experience",
-        "Skills": "My Skills"
+        "education": "Education",
+        "experience": "Experience",
+        "skills": "My Skills"
     },
     "formInfos": {
         "title": "Contact Form",

@@ -15,10 +15,9 @@ export default defineEventHandler(() => {
         ptbr: 'Graduação',
       },
       content: {
-        en: 'Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.',
-        ptbr: 'Richard kurumsal bir kimlik yaratmak için işe alındı. Yapılan işten çok memnun kaldık. Çok fazla tecrübesi var ve müşterinin ihtiyaçları konusunda çok endişeli. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut workels dolore magnarels alia.',
+        en: 'Graduated in Business Administration with a focus on decision-making and marketing studies.',
+        ptbr: 'Graduado em Administração com foco nos estudos de tomada de decisão e marketing.',
       },
     },
-
   ]
 })

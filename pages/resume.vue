@@ -62,7 +62,7 @@ const { data: skills } = await useFetch('/api/skills')
             {{ locale === 'en' ? job.title.en : job.title.ptbr }}
           </h4>
 
-          <span>{{ job.startYear }} — {{ job.endYear }}</span>
+          <span>{{ job.startYear }} — {{ job.endYear ? job.endYear : locale === 'en' ? 'present' : 'presente' }}</span>
 
           <p class="timeline-text">
             {{ locale === 'en' ? job.content.en : job.content.ptbr }}
@@ -80,7 +80,7 @@ const { data: skills } = await useFetch('/api/skills')
         <li v-for="skill in skills" :key="skill.id" class="skills-item">
           <div class="title-wrapper">
             <h5 class="h5">
-              {{ locale === 'en' ? skill.title.en : skill.title.ptbr }}
+              {{ skill.title }}
             </h5>
             <data :value="skill.percentage">{{ skill.percentage }}%</data>
           </div>
