@@ -16,6 +16,26 @@ export default defineEventHandler(() => {
       },
     },
     {
+      id: 21,
+      institution: 'DataCamp',
+      date: '01/2023',
+      name: {
+        en: 'Exploratory Data Analysis in SQL',
+        ptbr: 'Análise exploratória de dados em SQL',
+      },
+      link: 'https://www.datacamp.com/statement-of-accomplishment/course/1aff2b0569ef9602ed269842bb37b2dfb72cb96a',
+    },
+    {
+      id: 22,
+      institution: 'DataCamp',
+      date: '01/2023',
+      name: {
+        en: 'Introduction to Statistics',
+        ptbr: 'Introdução em Estatística',
+      },
+      link: 'https://www.datacamp.com/statement-of-accomplishment/course/77fdd8deb2ed737d0bdcd8b978721ff3a1077bd7',
+    },
+    {
       id: 2,
       institution: 'DataCamp',
       date: '01/2023',
