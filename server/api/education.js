@@ -4,16 +4,39 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
+      institution: 'Descomplica Faculdade Digital',
+      date: '2023 - ...',
+      name: {
+        en: 'Graduate in Data Analysis',
+        ptbr: 'Pós-graduação em Análise de Dados',
+      },
+      content: {
+        en: 'Graduate student in Data Analysis.',
+        ptbr: 'Estudante de Pós-Graduação em Análise de Dados.',
+      },
+    },
+    {
+      id: 1,
       institution: 'Universidade Federal do Vale do São Francisco',
       date: '2016 - 2022',
       name: {
-        en: 'Graduation in Business Administration',
+        en: 'Undergraduate in Business Administration',
         ptbr: 'Graduação em Administração',
       },
       content: {
         en: 'Graduated in Business Administration with a focus on decision-making and marketing studies.',
         ptbr: 'Graduado em Administração com foco nos estudos de tomada de decisão e marketing.',
       },
+    },
+    {
+      id: 23,
+      institution: 'DataCamp',
+      date: '01/2023',
+      name: {
+        en: 'Data Analyst in SQL (39 hours)',
+        ptbr: 'Analista de dados em SQL (39 horas)',
+      },
+      link: 'https://www.datacamp.com/statement-of-accomplishment/track/465a87ae518e05ea9518b8be33533bd3f143bb62',
     },
     {
       id: 21,
@@ -24,6 +47,26 @@ export default defineEventHandler(() => {
         ptbr: 'Análise exploratória de dados em SQL',
       },
       link: 'https://www.datacamp.com/statement-of-accomplishment/course/1aff2b0569ef9602ed269842bb37b2dfb72cb96a',
+    },
+    {
+      id: 24,
+      institution: 'DataCamp',
+      date: '01/2023',
+      name: {
+        en: 'Data-Driven Decision Making in SQL',
+        ptbr: 'Tomada de decisão em SQL baseada em dados',
+      },
+      link: 'https://www.datacamp.com/statement-of-accomplishment/course/59a8457d2701afe92f7c5ec123612fa47ce813b7',
+    },
+    {
+      id: 25,
+      institution: 'DataCamp',
+      date: '01/2023',
+      name: {
+        en: 'Data Communication Concepts',
+        ptbr: 'Conceitos de Comunicação de Dados',
+      },
+      link: 'https://www.datacamp.com/statement-of-accomplishment/course/548ac1d7946416aecf4936822d7584cbccb32a3f',
     },
     {
       id: 22,
