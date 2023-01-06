@@ -30,7 +30,10 @@ const { data: skills } = await useFetch('/api/skills')
 
       <ol class="timeline-list">
         <li v-for="ed in education" :key="ed.id" class="timeline-item">
-          <span>{{ locale === 'en' ? ed.name.en : ed.name.ptbr }}</span>
+          <NuxtLink v-if="ed.link" :to="ed.link">
+            <span>{{ locale === 'en' ? ed.name.en : ed.name.ptbr }}</span>
+          </NuxtLink>
+          <span v-else>{{ locale === 'en' ? ed.name.en : ed.name.ptbr }}</span>
           <h4 class="h4 timeline-item-title">
             {{ ed.institution }}
           </h4>
